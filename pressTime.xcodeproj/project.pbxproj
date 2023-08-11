@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,36 @@
 		D14062072A862B6500D18C7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14062062A862B6500D18C7E /* ViewController.swift */; };
 		D140620A2A862B6500D18C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14062082A862B6500D18C7E /* Main.storyboard */; };
 		D140620C2A862B6600D18C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D140620B2A862B6600D18C7E /* Assets.xcassets */; };
+		D140621D2A8634CF00D18C7E /* pressWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140621C2A8634CF00D18C7E /* pressWatchApp.swift */; };
+		D140621F2A8634CF00D18C7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140621E2A8634CF00D18C7E /* ContentView.swift */; };
+		D14062212A8634D000D18C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14062202A8634D000D18C7E /* Assets.xcassets */; };
+		D14062242A8634D000D18C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14062232A8634D000D18C7E /* Preview Assets.xcassets */; };
+		D14062272A8634D000D18C7E /* pressWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D140621A2A8634CF00D18C7E /* pressWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D14062252A8634D000D18C7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D14061F72A862B6500D18C7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D14062192A8634CF00D18C7E;
+			remoteInfo = "pressWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D140622B2A8634D000D18C7E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D14062272A8634D000D18C7E /* pressWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D14061FF2A862B6500D18C7E /* pressTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pressTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +51,22 @@
 		D14062092A862B6500D18C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D140620B2A862B6600D18C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D14062102A862B6600D18C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D140621A2A8634CF00D18C7E /* pressWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pressWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D140621C2A8634CF00D18C7E /* pressWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pressWatchApp.swift; sourceTree = "<group>"; };
+		D140621E2A8634CF00D18C7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D14062202A8634D000D18C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D14062232A8634D000D18C7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D14061FC2A862B6500D18C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14062172A8634CF00D18C7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				D14062012A862B6500D18C7E /* pressTime */,
+				D140621B2A8634CF00D18C7E /* pressWatch Watch App */,
 				D14062002A862B6500D18C7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				D14061FF2A862B6500D18C7E /* pressTime.app */,
+				D140621A2A8634CF00D18C7E /* pressWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +107,25 @@
 			path = pressTime;
 			sourceTree = "<group>";
 		};
+		D140621B2A8634CF00D18C7E /* pressWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				D140621C2A8634CF00D18C7E /* pressWatchApp.swift */,
+				D140621E2A8634CF00D18C7E /* ContentView.swift */,
+				D14062202A8634D000D18C7E /* Assets.xcassets */,
+				D14062222A8634D000D18C7E /* Preview Content */,
+			);
+			path = "pressWatch Watch App";
+			sourceTree = "<group>";
+		};
+		D14062222A8634D000D18C7E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D14062232A8634D000D18C7E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,14 +136,33 @@
 				D14061FB2A862B6500D18C7E /* Sources */,
 				D14061FC2A862B6500D18C7E /* Frameworks */,
 				D14061FD2A862B6500D18C7E /* Resources */,
+				D140622B2A8634D000D18C7E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D14062262A8634D000D18C7E /* PBXTargetDependency */,
+			);
+			name = pressTime;
+			productName = pressTime;
+			productReference = D14061FF2A862B6500D18C7E /* pressTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D14062192A8634CF00D18C7E /* pressWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14062282A8634D000D18C7E /* Build configuration list for PBXNativeTarget "pressWatch Watch App" */;
+			buildPhases = (
+				D14062162A8634CF00D18C7E /* Sources */,
+				D14062172A8634CF00D18C7E /* Frameworks */,
+				D14062182A8634CF00D18C7E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = pressTime;
-			productName = pressTime;
-			productReference = D14061FF2A862B6500D18C7E /* pressTime.app */;
+			name = "pressWatch Watch App";
+			productName = "pressWatch Watch App";
+			productReference = D140621A2A8634CF00D18C7E /* pressWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,10 +178,13 @@
 					D14061FE2A862B6500D18C7E = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					D14062192A8634CF00D18C7E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = D14061FA2A862B6500D18C7E /* Build configuration list for PBXProject "pressTime" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -113,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				D14061FE2A862B6500D18C7E /* pressTime */,
+				D14062192A8634CF00D18C7E /* pressWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +209,15 @@
 			files = (
 				D140620C2A862B6600D18C7E /* Assets.xcassets in Resources */,
 				D140620A2A862B6500D18C7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14062182A8634CF00D18C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14062242A8634D000D18C7E /* Preview Assets.xcassets in Resources */,
+				D14062212A8634D000D18C7E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +234,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D14062162A8634CF00D18C7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D140621F2A8634CF00D18C7E /* ContentView.swift in Sources */,
+				D140621D2A8634CF00D18C7E /* pressWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D14062262A8634D000D18C7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D14062192A8634CF00D18C7E /* pressWatch Watch App */;
+			targetProxy = D14062252A8634D000D18C7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D14062082A862B6500D18C7E /* Main.storyboard */ = {
@@ -271,6 +382,7 @@
 		D14062142A862B6600D18C7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +415,7 @@
 		D14062152A862B6600D18C7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +445,66 @@
 			};
 			name = Release;
 		};
+		D14062292A8634D000D18C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pressWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7QS576V6JV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = pressWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = FDC.pressTime;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FDC.pressTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+			};
+			name = Debug;
+		};
+		D140622A2A8634D000D18C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pressWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7QS576V6JV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = pressWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = FDC.pressTime;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FDC.pressTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -349,6 +522,15 @@
 			buildConfigurations = (
 				D14062142A862B6600D18C7E /* Debug */,
 				D14062152A862B6600D18C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14062282A8634D000D18C7E /* Build configuration list for PBXNativeTarget "pressWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14062292A8634D000D18C7E /* Debug */,
+				D140622A2A8634D000D18C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
